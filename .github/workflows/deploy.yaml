@@ -22,7 +22,7 @@ jobs:
           dotnet-version: 9.0.x # Set this to your project's target framework
 
       - name: Publish Blazor WASM
-        run: dotnet publish Anno117Tools/Anno117Tools.csproj -c Release -o release/app --nologo
+        run: dotnet publish /Anno117Tools/Anno117Tools.csproj -c Release -o release/app --nologo
 
       - name: Create .nojekyll file
         # GitHub Pages uses Jekyll by default, which ignores folders starting with an underscore (_framework). 
